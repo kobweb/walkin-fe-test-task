@@ -1,6 +1,6 @@
 import React from "react";
 
-import { App as AppComponent } from "../app";
+import { App as AppComponent } from "../base-app";
 
 import "../styles/index.scss";
 

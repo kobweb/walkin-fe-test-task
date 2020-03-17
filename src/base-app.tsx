@@ -4,7 +4,7 @@ import CardWithTitle from "./components/card-with-title";
 import ToggleSwitch from "./components/toggle-switch";
 import Field from "./components/field";
 
-import styles from "./app.module.scss";
+import styles from "./base-app.module.scss";
 
 // TODO: add icon for title
 
@@ -18,6 +18,7 @@ export const App = () => {
     []
   );
 
+  
   const renderFieldMessage = useCallback(
     () =>
       "This setting determines whether or not diners can request to ‘Eat Now’ at your restaurant.",
