@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+$base-indent: 20px;
+
+$field-horizontal-indent: $base-indent;
+$field-vertical-indent: $base-indent / 2;
+$field-min-height: 42px;
+
+.fieldContainer {
+  .field {
+    background-color: $gray;
+    min-height: $field-min-height;
+    padding: $field-vertical-indent $field-horizontal-indent;
+    border-radius: 10px;
+
+    @include flex-row($justify-content: space-between);
+
+    .label {
+      font-family: $font-regular;
+      font-size: $font-size-md;
+      color: $black;
+      margin-right: $field-horizontal-indent / 2;
+    }
+
+    &Vertical {
+      @include flex-column(
+        $justify-content: space-between,
+        $align-items: flex-start
+      );
+
+      .label {
+        margin-right: 0;
+        margin-bottom: $field-vertical-indent;
+      }
+    }
+  }
+
+  .titleContainer {
+    margin-bottom: $base-indent;
+  }
+
+  .message {
+    padding: $field-vertical-indent $field-horizontal-indent;
+    color: $gray-dark;
+    font-size: $font-size-sm;
+    font-family: $font-regular;
+    line-height: 130%;
+
+    &.error {
+      color: $red;
+    }
+  }
+}
+
+.storybookContainer {
+  padding: 20px;
+}

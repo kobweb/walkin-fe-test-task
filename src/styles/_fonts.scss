@@ -1,0 +1,40 @@
+$avenir-path: "../assets/fonts/avenir-next";
+
+@font-face {
+  font-family: "Avenir-Next-Regular";
+  src: url("#{$avenir-path}/AvenirNextCyr-Regular.eot");
+  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"),
+    url("#{$avenir-path}/AvenirNextCyr-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$avenir-path}/AvenirNextCyr-Regular.woff2") format("woff2"),
+    url("#{$avenir-path}/AvenirNextCyr-Regular.woff") format("woff"),
+    url("#{$avenir-path}/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Next-Medium";
+  src: url("#{$avenir-path}/AvenirNextCyr-Medium.eot");
+  src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"),
+    url("#{$avenir-path}/AvenirNextCyr-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$avenir-path}/AvenirNextCyr-Medium.woff2") format("woff2"),
+    url("#{$avenir-path}/AvenirNextCyr-Medium.woff") format("woff"),
+    url("#{$avenir-path}/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Next-Demi";
+  src: url("#{$avenir-path}/AvenirNextCyr-Demi.eot");
+  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"),
+    url("#{$avenir-path}/AvenirNextCyr-Demi.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$avenir-path}/AvenirNextCyr-Demi.woff2") format("woff2"),
+    url("#{$avenir-path}/AvenirNextCyr-Demi.woff") format("woff"),
+    url("#{$avenir-path}/AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

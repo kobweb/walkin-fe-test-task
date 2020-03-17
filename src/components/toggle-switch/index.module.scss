@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+$width: 47px;
+$height: 25px;
+
+$horizontal-indent: 5px;
+$vertical-indent: 3px;
+
+$circle-radius: $height - ($vertical-indent * 2);
+$circle-slide-indent: $width - $circle-radius - ($horizontal-indent * 2);
+
+$border-radius: 32px;
+
+$animation-duration: 0.3s;
+
+.switch {
+  width: 47px;
+  height: 25px;
+  background-color: $blue;
+  border-radius: $border-radius;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity $animation-duration ease;
+
+  &Enabled {
+    opacity: 1;
+
+    &::before {
+      transform: translateX($circle-slide-indent);
+    }
+  }
+
+  &::before {
+    content: "";
+    width: $circle-radius;
+    height: $circle-radius;
+    border-radius: $border-radius;
+    position: absolute;
+    left: $horizontal-indent;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: $white;
+    will-change: transform;
+    transition: transform $animation-duration ease;
+  }
+}
+
+.storybookContainer {
+  padding: 40px 20px;
+
+  .storybookTitle {
+    font-family: $font-medium;
+    margin-bottom: 20px;
+  }
+}

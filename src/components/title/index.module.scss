@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.title {
+  color: $black;
+  line-height: normal;
+
+  &-h1 {
+    font-size: $font-size-lg;
+  }
+
+  &-h2 {
+    // Some font-size
+  }
+
+  &-h3 {
+    // Some font-size
+  }
+
+  &-h4 {
+    font-size: $font-size-base;
+  }
+
+  &-h5 {
+    // Some font-size
+  }
+
+  &-h6 {
+    // Some font-size
+  }
+
+  &-bold {
+    font-family: $font-demi;
+  }
+
+  &-medium {
+    font-family: $font-medium;
+  }
+}
+
+.storybookContainer {
+  padding: 20px;
+}

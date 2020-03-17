@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+$card-padding: 35px;
+
+.card {
+  padding: $card-padding; // TODO: check right padding
+  width: 100%;
+  background-color: $white;
+}
