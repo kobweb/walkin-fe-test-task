@@ -11,7 +11,7 @@ import styles from "./app.module.scss";
 export const App = () => {
   const [switchChecked, setSwitchChecked] = useState(true);
 
-  const renderCardTitle = useCallback(() => "Eat Now Features", []);
+  const renderCardTitle = useCallback(() => "Eat Now Features 🍽️", []);
 
   const renderFieldTitle = useCallback(
     () => "Do you want diners to be able to request tables?",
